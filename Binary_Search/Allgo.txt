@@ -1,0 +1,30 @@
+Binary Search Algorithm
+
+Procedure: BinarySearch(arr, key, low, high)
+
+Input: An array arr sorted in ascending order, a search key, and the indices low and high defining the search range.
+Output: The index of the found key or -1 if not found.
+Algorithm Steps:
+
+a. Calculate the middle index:
+
+mid = (high + low) / 2
+To lower the chances of overflow, we usually use this equivalent formula instead:
+
+mid = low + (high - low) / 2
+b. Compare the middle element with the key:
+
+if arr[mid] == key:
+    return mid
+Great, we have found the element we are looking for!
+
+c. If the key is smaller than the middle element, search the left half:
+
+if arr[mid] > key:
+    return BinarySearch(arr, key, low, mid - 1)
+In this case, we can be sure that all elements to the right of mid are also greater than A[mid], since the array is sorted. So we don't need to bother searching there, and so only focus on the left half.
+
+d. If the key is larger than the middle element, search the right half:
+
+else:
+    return BinarySearch(arr, key, mid + 1, high)
