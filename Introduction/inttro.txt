@@ -1,0 +1,34 @@
+collection of data value an relationship among them and we can applied function opreation on them.
+
+Intro to Big O complexity
+
+need for complexity:
+
+which approch is better:may be perfomance diffrence
+better means faster(time complexity) and take less memmory(space complexity)
+
+we dont compute time not on second we compute on basis of no of operation computer need to do.
+
+how run time grow as input grows.
+
+Asymptotic Analysis: for i/p size N we observe trend n+3 = n, n2 + 3n = n2, 2n2 + 5n = n2
+
+big o (worst case  )
+
+common complexity
+
+o(1): constant
+
+O(logn): binary search allgo
+
+o(n): transverse element of array and add them
+
+o(nlogn): merge sort
+
+o(n2): [1,2,3]
+
+o(2n): fibonachi
+
+o(n!)
+
+
