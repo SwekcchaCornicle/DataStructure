@@ -1,1 +1,9 @@
 recursion - function calling itself
+
+when to use - when problem can be devided into sub problem
+
+recursive leap of faith - 
+
+recursion tree for factorial N 5 >4 >3 >2 >1> 1*2>2*3>6*4>24*5>120
+
+recursion call stacl 5|4|3|2|1  follow last in first out
