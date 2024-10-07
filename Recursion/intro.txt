@@ -7,3 +7,7 @@ recursive leap of faith -
 recursion tree for factorial N 5 >4 >3 >2 >1> 1*2>2*3>6*4>24*5>120
 
 recursion call stacl 5|4|3|2|1  follow last in first out
+
+recursion vs iteration - things done recursively can be done iteratively, iteration only has assending phase while recursion has desending phase
+
+Base condition : last valid input, first invalid input
