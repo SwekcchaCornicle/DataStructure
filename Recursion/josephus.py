@@ -13,3 +13,17 @@ The rules of the game are as follows:
 5.Else, the last friend in the circle wins the game.
 
 Given the number of friends, n, and an integer k, return the winner of the game.'''
+
+#approch 1 t(n2), s(n)
+# def jose(arr,start,k):
+#     if len(arr) == 1:
+#         return arr[0]
+#     remove = (start+k-1)%len(arr)
+#     del arr[remove]
+#     return jose(arr,remove,k)
+# arr = [i+1 for i in range(4)]
+# print(jose(arr,0,2))
+
+#approch 2 t(n), s(n)
+
+    
