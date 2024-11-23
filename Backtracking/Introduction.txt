@@ -1,0 +1,37 @@
+What is backtracking?
+    allgo approch to find sol to problem that involve many path.
+    sol are built up step by step recursion.
+    controlled recurssion.
+
+How is diffren from recursion.
+    controlled recursion + modify state of problem in place + abondend path that don't lead sol.
+
+
+pass by refrence or change in place
+    'abc' > crate new array and get all permutation
+    backtracking > changes in place  no nee d to create new array
+
+
+Bluprint to solve backtracking 
+    func()
+    {
+    if solved > return or print sol
+    for choice in choice:
+    {
+        if is valid choice
+        {
+        choose
+        func()
+        revert choice > when choice not leading to valid path
+        }
+    }
+    }
+    func()
+
+
+Identify when to use backtracking
+    if problem require every possible path
+    if there are multiple choice you want to achive all.
+
+
+    
