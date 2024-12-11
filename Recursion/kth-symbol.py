@@ -22,16 +22,26 @@ Given two integer n and k, return the kth (1-indexed) symbol in the nth row of a
 #     return kt_symbol(n,x,k)
 # print(kt_symbol(1,'0',4))
 # time o(n) , s(n)
-def kgram(n , k):
-    if n ==1:
-        return 0
-    l = pow(2,n-1)
-    half = l // 2
-    if k <= half:
-        return kgram(n-1 , k)
+# def kgram(n , k):
+
+#     if n ==1:
+#         return 0
+#     l = pow(2,n-1)
+#     half = l // 2
+#     if k <= half:
+#         return kgram(n-1 , k)
+#     else:
+#         return int(not kgram(n-1 , k-half))
+# print(kgram(3 , 2))
+
+n=int(input())
+l=["0","1"]
+for i in n:
+    if "0" in l:
+        "0"="01"
     else:
-        return int(not kgram(n-1 , k-half))
-print(kgram(3 , 2))
-
-
+        "1"="10"
+print(l)
+    
+    
     
